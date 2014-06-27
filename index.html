@@ -7,14 +7,40 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<form>
-		<fieldset>
-			<legend>Edit Your Profile</legend>
-			<input type="text" name="Name">
-			<input type="text" name="Bio">
-			<input type="text" name="Favorite Books">
-			<input type="text" name="Favorite Javascript Libraries">
-	</form>
+	<main>
+		<form id="profile-edit">
+			<fieldset>
+				<legend>Edit Your Profile</legend>
+				<label for="user-name">Name</label>
+				<input id="form-name" type="text" name="user-name">
+				<label for="bio">Bio</label>
+				<input id="form-bio" type="text" name="bio">
+				<label for="books">Favorite Books</label>
+				<input id="form-books" type="text" name="books">
+				<label for="jslib">Favorite Javascript Libraries</label>
+				<input id="form-jslib" type="text" name="jslib">
+				<input type="submit" value="Save Changes">
+			</fieldset>
+		</form>
+		<section class="profile">
+			<div class="profile-info">
+				<h4>Name:</h4>
+				<p id="name">Fill Murray</p>
+			</div>			
+			<div class="profile-info">
+				<h4>Bio:</h4>
+				<p id="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi error facere tenetur similique vel sit, maiores rerum dolores saepe esse quos expedita sint quisquam voluptatum nesciunt quaerat maxime adipisci modi.</p>
+			</div>			
+			<div class="profile-info">
+				<h4>Favorite Books:</h4>
+				<p id="books">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cum saepe eum velit nobis omnis, reiciendis id laborum! Id itaque, vitae illum at est quam consequuntur natus enim voluptate sit.</p>
+			</div>			
+			<div class="profile-info">
+				<h4>Favorite JavaScript Libraries:</h4>
+				<p id="jslib">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cum saepe eum velit nobis omnis, reiciendis id laborum! Id itaque, vitae illum at est quam consequuntur natus enim voluptate sit.</p>
+			</div>
+		</section>
+	</main>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="main.js"></script>
 
